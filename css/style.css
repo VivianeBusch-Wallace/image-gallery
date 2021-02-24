@@ -1,16 +1,11 @@
-/*wrapper setup*/
-.wrapper {
-  max-width: 20rem;
-  width: 100%;
-  border: 1px red solid;
-  position: relative;
-}
-
 /* title setup: */
 h1 {
   text-align: center;
+  color: rgb(72, 165, 252);
   font-size: 4rem;
-  border: violet 3px solid;
+  font-weight: bold;
+  font-family: Montserrat, "Montserrat Subrayada", Oswald, Tahoma, Geneva, Arial,
+    Helvetica, sans-serif;
 }
 /* main image setup: */
 img {
@@ -36,13 +31,13 @@ img:hover {
 /* individual image setup */
 #coast {
   z-index: 4;
-  transform: rotate(-15deg);
+  transform: rotate(-13deg);
   top: 8rem;
   left: 7rem;
 }
 #beach {
   z-index: 3;
-  transform: rotate(-100deg);
+  transform: rotate(-98deg);
   top: 20rem;
   left: 40rem;
   border-left: 100px solid whitesmoke;
@@ -51,20 +46,20 @@ img:hover {
 #oceanWave {
   z-index: 2;
   transform: rotate(12deg);
-  top: 10rem;
+  top: 14rem;
   left: 48rem;
 }
 #whales {
   z-index: 1;
   transform: rotate(15deg);
   top: 8rem;
-  left: 85rem;
+  left: 83rem;
 }
 #coast:hover {
   z-index: 5;
   transform: rotate(0deg);
-  top: 6rem;
-  left: 15rem;
+  top: 7rem;
+  left: 10rem;
   box-shadow: grey 10px 10px 30px;
   max-height: 42rem;
 }
