@@ -13,7 +13,7 @@ For borders and outlines:
 border-top, border-right, border-bottom, border-left, outline
 
 For positioning the images:
-position, z-index, transform, transform-origin
+position, z-index, transform, top, left
 
 Extras:
-box-shadow, opacity, filter
+box-shadow, opacity, filter, (style changes on hover)

@@ -1,44 +1,93 @@
-.polaroid {
-  /* border: thick red solid; */
+/*wrapper setup*/
+.wrapper {
+  max-width: 20rem;
+  width: 100%;
+  border: 1px red solid;
+  position: relative;
 }
-div img {
-  max-height: 35rem;
-  max-width: 30rem;
+
+/* title setup: */
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  border: violet 3px solid;
+}
+/* main image setup: */
+img {
+  max-height: 37rem;
+  max-width: 35rem;
   border-top: 40px solid whitesmoke;
   border-right: 40px solid whitesmoke;
   border-bottom: 100px solid whitesmoke;
   border-left: 40px solid whitesmoke;
-  /* opacity: 0.7; */
+  opacity: 0.7;
   outline: lightslategrey 1px solid;
   z-index: auto;
-  position: relative;
-  /* filter: grayscale(90%); */
+  position: absolute;
+  filter: grayscale(80%);
   box-shadow: grey 4px 8px 20px;
 }
+img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transition: 1s;
+}
+
+/* individual image setup */
 #coast {
-  z-index: 2;
+  z-index: 4;
   transform: rotate(-15deg);
-  transform-origin: 40vw -20vh;
-  top: 5rem;
+  top: 8rem;
+  left: 7rem;
 }
 #beach {
-  z-index: 1;
-  transform: rotate(10deg);
-  transform-origin: -10vw 70vh;
-  top: -40rem;
-  left: 30rem;
+  z-index: 3;
+  transform: rotate(-100deg);
+  top: 20rem;
+  left: 40rem;
+  border-left: 100px solid whitesmoke;
+  border-bottom: 40px solid whitesmoke;
 }
 #oceanWave {
-  z-index: -1;
-  transform: rotate(-14deg);
-  transform-origin: 30vw 10vh;
-  top: -75rem;
-  left: 50rem;
+  z-index: 2;
+  transform: rotate(12deg);
+  top: 10rem;
+  left: 48rem;
 }
 #whales {
-  z-index: -2;
-  transform: rotate(10deg);
-  transform-origin: 0% 30%;
-  top: -105rem;
-  left: 80rem;
+  z-index: 1;
+  transform: rotate(15deg);
+  top: 8rem;
+  left: 85rem;
+}
+#coast:hover {
+  z-index: 5;
+  transform: rotate(0deg);
+  top: 6rem;
+  left: 15rem;
+  box-shadow: grey 10px 10px 30px;
+  max-height: 42rem;
+}
+#beach:hover {
+  z-index: 5;
+  transform: rotate(-90deg);
+  box-shadow: grey 10px 10px 30px;
+  top: 8rem;
+  left: 40rem;
+  max-height: 45rem;
+}
+#oceanWave:hover {
+  z-index: 5;
+  transform: rotate(0deg);
+  box-shadow: grey 10px 10px 30px;
+  left: 45rem;
+  max-width: 45rem;
+}
+#whales:hover {
+  z-index: 5;
+  transform: rotate(0deg);
+  box-shadow: grey 10px 10px 30px;
+  top: 6rem;
+  left: 78rem;
+  max-height: 45rem;
 }
