@@ -1,0 +1,32 @@
+body {
+}
+.polaroid {
+  display: inline-block;
+}
+body div img {
+  max-height: 50rem;
+  max-width: 60rem;
+  border-top: 40px solid whitesmoke;
+  border-right: 40px solid whitesmoke;
+  border-bottom: 100px solid whitesmoke;
+  border-left: 40px solid whitesmoke;
+  opacity: 0.5;
+  outline: lightslategrey 1px solid;
+  filter: grayscale(90%);
+}
+#coast {
+  z-index: 2;
+  transform: rotate(10deg);
+}
+#beach {
+  z-index: 1;
+  transform: rotate(20deg);
+}
+#oceanWave {
+  z-index: -1;
+  transform: rotate(14deg);
+}
+#whales {
+  z-index: -2;
+  transform: rotate(-10deg);
+}
