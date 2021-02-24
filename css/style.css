@@ -1,39 +1,44 @@
-body {
-}
 .polaroid {
-  display: inline-block;
-  /*border: thick red solid;*/
-  position: relative;
-  top: 5rem;
+  /* border: thick red solid; */
 }
-body div img {
+div img {
   max-height: 35rem;
   max-width: 30rem;
   border-top: 40px solid whitesmoke;
   border-right: 40px solid whitesmoke;
   border-bottom: 100px solid whitesmoke;
   border-left: 40px solid whitesmoke;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   outline: lightslategrey 1px solid;
-  /*filter: grayscale(90%);*/
+  z-index: auto;
+  position: relative;
+  /* filter: grayscale(90%); */
+  box-shadow: grey 4px 8px 20px;
 }
 #coast {
-  z-index: 50;
-  transform: rotate(-10deg);
-  transform-origin: 60vw -20vh;
+  z-index: 2;
+  transform: rotate(-15deg);
+  transform-origin: 40vw -20vh;
+  top: 5rem;
 }
 #beach {
-  z-index: 3;
+  z-index: 1;
   transform: rotate(10deg);
   transform-origin: -10vw 70vh;
+  top: -40rem;
+  left: 30rem;
 }
 #oceanWave {
-  z-index: 2;
+  z-index: -1;
   transform: rotate(-14deg);
   transform-origin: 30vw 10vh;
+  top: -75rem;
+  left: 50rem;
 }
 #whales {
-  z-index: 1;
-  transform: rotate(5deg);
+  z-index: -2;
+  transform: rotate(10deg);
   transform-origin: 0% 30%;
+  top: -105rem;
+  left: 80rem;
 }
