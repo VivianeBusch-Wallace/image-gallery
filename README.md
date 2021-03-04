@@ -1,12 +1,12 @@
 # image-gallery
 
-##What it's for
+## What it's for
 This image gallery is a practice for utilizing CSS code.
 I am just showing one example of how an image gallery could be displayed on a website.
 
 When you open the page you will find that the pictures change when the cursor hovers over them.
 
-##CSS used
+## CSS used
 Mainly I used the following code elements.
 
 For sizing the images:
